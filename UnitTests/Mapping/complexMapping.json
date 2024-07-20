@@ -1,0 +1,38 @@
+﻿{
+  "SourceType": "UnitTests.Models.ComplexSource",
+  "Mapping": {
+    "FullString": {
+      "Source": "String",
+      "Type": "System.String",
+      "Default": null
+    },
+    "StartString": {
+      "Source": "String",
+      "SourceEnd": 4,
+      "Type": "System.String",
+      "Default": null
+    },
+    "EndString": {
+      "Source": "String",
+      "SourceStart": 8,
+      "Type": "System.String",
+      "Default": null
+    },
+    "MiddleString": {
+      "Source": "String",
+      "SourceStart": 4,
+      "SourceEnd": 8,
+      "Type": "System.String",
+      "Default": null
+    },
+    "Date": {
+      "Source": "DateString",
+      "Transformer": "Date",
+      "TransformerParams": {
+        "Format": "yyyy-MM-dd"
+      },
+      "Type": "System.DateTime",
+      "Default": null
+    }
+  }
+}

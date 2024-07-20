@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonMapping", "JsonMapping\JsonMapping.csproj", "{EFD4288A-B49A-4E91-AF74-ECC8ACB155C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{F97AA950-5E0C-4886-8DAA-E6194B0283C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFD4288A-B49A-4E91-AF74-ECC8ACB155C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFD4288A-B49A-4E91-AF74-ECC8ACB155C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFD4288A-B49A-4E91-AF74-ECC8ACB155C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFD4288A-B49A-4E91-AF74-ECC8ACB155C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F97AA950-5E0C-4886-8DAA-E6194B0283C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F97AA950-5E0C-4886-8DAA-E6194B0283C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F97AA950-5E0C-4886-8DAA-E6194B0283C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F97AA950-5E0C-4886-8DAA-E6194B0283C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDEF3FCB-582B-48D6-8085-B1526C2CED14}
+	EndGlobalSection
+EndGlobal

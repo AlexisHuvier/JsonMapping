@@ -1,0 +1,11 @@
+﻿{
+  "SourceType": "UnitTests.Models.BaseSource",
+  "Mapping": {
+    "Chaine": {
+      "Source": "String",
+      "Transformer": "Unknown",
+      "Type": "System.String",
+      "Default": "string"
+    }
+  }
+}

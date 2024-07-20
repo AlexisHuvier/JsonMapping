@@ -1,0 +1,81 @@
+﻿{
+  "SourceType": "UnitTests.Models.BaseSource",
+  "Mapping": {
+    "Entier": {
+      "Source": "Integer",
+      "Type": "System.Int32",
+      "Default": -3
+    },
+    "Flottant": {
+      "Source": "Float",
+      "Type": "System.Single",
+      "Default": -3.5
+    },
+    "Chaine": {
+      "Source": "String",
+      "Type": "System.String",
+      "Default": "string"
+    },
+    "Booleen": {
+      "Source": "Bool",
+      "Type": "System.Boolean",
+      "Default": true
+    },
+    "ComplexEntier": {
+      "Source": "Object.Integer",
+      "Type": "System.Int32",
+      "Default": -3
+    },
+    "ComplexFlottant": {
+      "Source": "Object.Float",
+      "Type": "System.Single",
+      "Default": -3.5
+    },
+    "ComplexChaine": {
+      "Source": "Object.String",
+      "Type": "System.String",
+      "Default": "string"
+    },
+    "ComplexBooleen": {
+      "Source": "Object.Bool",
+      "Type": "System.Boolean",
+      "Default": false
+    },
+    "DefaultEntier": {
+      "Type": "System.Int32",
+      "Default": -3
+    },
+    "DefaultFlottant": {
+      "Type": "System.Single",
+      "Default": -3.5
+    },
+    "DefaultChaine": {
+      "Type": "System.String",
+      "Default": "string"
+    },
+    "DefaultBooleen": {
+      "Type": "System.Boolean",
+      "Default": false
+    },
+    "NotDefinedEntier": {
+      "Source": "Foo",
+      "Type": "System.Int32",
+      "Default": -3
+    },
+    "NotDefinedFlottant": {
+      "Source": "Foo",
+      "Type": "System.Single",
+      "Default": -3.5
+    },
+    "NotDefinedChaine": {
+      "Source": "Foo",
+      "Type": "System.String",
+      "Default": "string"
+    },
+    "NotDefinedBooleen": {
+      "Source": "Foo",
+      "Type": "System.Boolean",
+      "Default": false
+    }
+  }
+}
