@@ -2,8 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <ImplicitUsings>enable</ImplicitUsings>
+	<PackageVersion>1.0.0</PackageVersion>
     <Nullable>enable</Nullable>
+    <Title>Json Mapping</Title>
+    <Description>Mapping d'objet en C# via fichier JSON</Description>
+    <PackageProjectUrl>https://github.com/AlexisHuvier/JsonMapping</PackageProjectUrl>
+    <Copyright>Copyright (c) LavaPower 2024-2024</Copyright>
+    <PackageTags>Json,Mapping,Object</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/AlexisHuvier/JsonMapping</RepositoryUrl>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+	<ItemGroup>
+		<None Include="../README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
 </Project>
