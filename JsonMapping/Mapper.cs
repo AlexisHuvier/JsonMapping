@@ -29,12 +29,33 @@ namespace JsonMapping
             var target = new TTarget();
             var targetType = typeof(TTarget);
             foreach (var field in targetFields)
-            {
-                var property = targetType.GetProperty(field.Key) ?? throw new ArgumentException($"Impossible de trouver la propriété dans la cible : {field.Key}");
-                property.SetValue(target, field.Value);
-            }
+                MapFieldToTarget(target, targetType, field);
 
             return target;
+        }
+
+        private static void MapFieldToTarget<TTarget>(TTarget target, Type targetType, KeyValuePair<string, object?> field)
+        {
+            var type = targetType;
+            PropertyInfo? property = null;
+            object? propertyObject = target;
+            foreach (var propertyName in field.Key.Split("."))
+            {
+                if (property != null)
+                {
+                    if (property.GetValue(propertyObject) == null)
+                    {
+                        var obj = Activator.CreateInstance(type);
+                        property.SetValue(propertyObject, obj);
+                        propertyObject = obj;
+                    }
+                    else
+                        propertyObject = property.GetValue(propertyObject) ?? Activator.CreateInstance(type);
+                }
+                property = type.GetProperty(propertyName) ?? throw new ArgumentException($"Impossible de trouver la propriété dans la cible : {propertyName}");
+                type = property.PropertyType;
+            }
+            property!.SetValue(propertyObject, field.Value);
         }
 
         private static object? MapField<T>(T source, FieldConfig fieldConfig)
