@@ -24,13 +24,11 @@ namespace JsonMapping.Transform
             {
                 try
                 {
-                    if (strType switch
-                    {
-                        "Greater" => ((IComparable)source).CompareTo(value!) > 0,
-                        "Equal" => ((IComparable)source).CompareTo(value!) == 0,
-                        "Lesser" => ((IComparable)source).CompareTo(value!) < 0,
-                        _ => throw new NotImplementedException()
-                    })
+                    if(
+                        strType == "Greater" && ((IComparable)source).CompareTo(value!) > 0 ||
+                        strType == "Equal" && ((IComparable)source).CompareTo(value!) == 0 ||
+                        strType == "Lesser" && ((IComparable)source).CompareTo(value!) < 0
+                    )
                         return trueValue;
                     return falseValue;
                 }

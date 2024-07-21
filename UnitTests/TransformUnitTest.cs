@@ -155,5 +155,13 @@ namespace UnitTests
             var transform = TransformFactory.GetTransform("INCONNU");
             Assert.Null(transform);
         }
+
+        [Fact]
+        public void RegisterTransform()
+        {
+            Assert.Null(TransformFactory.GetTransform("Custom"));
+            TransformFactory.RegisterTransform("Custom", new CustomTransform());
+            Assert.NotNull(TransformFactory.GetTransform("Custom"));
+        }
     }
 }

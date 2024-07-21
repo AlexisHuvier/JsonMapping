@@ -77,6 +77,7 @@ namespace UnitTests
         {
             var mapper = new Mapper("Mapping/erreurMapping.json");
             Assert.Throws<ArgumentException>(() => mapper.Map<BaseSource, BaseTarget>(new BaseSource()));
+            Assert.Throws<ArgumentException>(() => new Mapper(""));
         }
 
         [Fact]
