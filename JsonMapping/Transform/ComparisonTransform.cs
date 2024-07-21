@@ -24,13 +24,7 @@ namespace JsonMapping.Transform
             {
                 try
                 {
-                    if(
-                        strType == "Greater" && ((IComparable)source).CompareTo(value!) > 0 ||
-                        strType == "Equal" && ((IComparable)source).CompareTo(value!) == 0 ||
-                        strType == "Lesser" && ((IComparable)source).CompareTo(value!) < 0
-                    )
-                        return trueValue;
-                    return falseValue;
+                    return ProcessComparison(source, value, trueValue, falseValue, strType);
                 }
                 catch (ArgumentException)
                 {
@@ -39,6 +33,17 @@ namespace JsonMapping.Transform
             }
             else 
                 throw new ArgumentException("Type doit être 'Greater', 'Equal' ou 'Lesser'");
+        }
+
+        private static object? ProcessComparison(object source, object? value, object? trueValue, object? falseValue, string strType)
+        {
+            if (
+                strType == "Greater" && ((IComparable)source).CompareTo(value!) > 0 ||
+                strType == "Equal" && ((IComparable)source).CompareTo(value!) == 0 ||
+                strType == "Lesser" && ((IComparable)source).CompareTo(value!) < 0
+            )
+                return trueValue;
+            return falseValue;
         }
     }
 }
