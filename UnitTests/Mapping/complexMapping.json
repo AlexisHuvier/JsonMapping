@@ -1,24 +1,24 @@
 ﻿{
   "SourceType": "UnitTests.Models.ComplexSource",
   "Mapping": {
-    "FullString": {
+    "Strings.Full": {
       "Source": "String",
       "Type": "System.String",
       "Default": null
     },
-    "StartString": {
+    "Strings.Start": {
       "Source": "String",
       "SourceEnd": 4,
       "Type": "System.String",
       "Default": null
     },
-    "EndString": {
+    "Strings.End": {
       "Source": "String",
       "SourceStart": 8,
       "Type": "System.String",
       "Default": null
     },
-    "MiddleString": {
+    "Strings.Middle": {
       "Source": "String",
       "SourceStart": 4,
       "SourceEnd": 8,

@@ -65,10 +65,10 @@ namespace UnitTests
             var mapper = new Mapper("Mapping/complexMapping.json");
             var result = mapper.Map<ComplexSource, ComplexTarget>(new ComplexSource());
 
-            Assert.Equal("Salut à tous !", result.FullString);
-            Assert.Equal("Salu", result.StartString);
-            Assert.Equal("t à ", result.MiddleString);
-            Assert.Equal("tous !", result.EndString);
+            Assert.Equal("Salut à tous !", result.Strings.Full);
+            Assert.Equal("Salu", result.Strings.Start);
+            Assert.Equal("t à ", result.Strings.Middle);
+            Assert.Equal("tous !", result.Strings.End);
             Assert.Equal(new DateTime(2024, 05, 06), result.Date);
         }
 

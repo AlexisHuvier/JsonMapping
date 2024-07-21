@@ -8,10 +8,15 @@ namespace UnitTests.Models
 {
     public class ComplexTarget
     {
-        public string FullString { get; set; } = default!;
-        public string StartString { get; set; } = default!;
-        public string EndString { get; set; } = default!;
-        public string MiddleString { get; set; } = default!;
+        public Strings Strings { get; set; } = default!;
         public DateTime Date { get; set; }
+    }
+
+    public class Strings
+    {
+        public string Full { get; set; } = default!;
+        public string Start { get; set; } = default!;
+        public string End { get; set; } = default!;
+        public string Middle { get; set; } = default!;
     }
 }
