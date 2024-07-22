@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <ImplicitUsings>enable</ImplicitUsings>
-	<PackageVersion>1.1.0</PackageVersion>
+	<PackageVersion>1.1.1</PackageVersion>
     <Nullable>enable</Nullable>
     <Title>Json Mapping</Title>
     <Description>Mapping d'objet en C# via fichier JSON</Description>
