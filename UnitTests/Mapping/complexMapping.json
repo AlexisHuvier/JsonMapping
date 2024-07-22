@@ -33,6 +33,10 @@
       },
       "Type": "System.DateTime",
       "Default": null
+    },
+    "DateNullable": {
+      "Type": "System.DateTime",
+      "Default": null
     }
   }
 }

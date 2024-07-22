@@ -83,7 +83,7 @@ namespace JsonMapping
                 baseValue = value.Deserialize(Type.GetType(fieldConfig.Type)!);
 
             var finalType = Type.GetType(fieldConfig.Type) ?? throw new ArgumentException($"Impossible de trouver le type du field : {fieldConfig.Type}");
-            return Convert.ChangeType(baseValue, finalType, CultureInfo.InvariantCulture);
+            return baseValue == null ? null : Convert.ChangeType(baseValue, finalType, CultureInfo.InvariantCulture);
         }
 
         private static object? GetFieldBaseValue<T>(T source, FieldConfig fieldConfig)

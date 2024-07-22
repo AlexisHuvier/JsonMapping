@@ -70,6 +70,7 @@ namespace UnitTests
             Assert.Equal("t à ", result.Strings.Middle);
             Assert.Equal("tous !", result.Strings.End);
             Assert.Equal(new DateTime(2024, 05, 06), result.Date);
+            Assert.Null(result.DateNullable);
         }
 
         [Fact]

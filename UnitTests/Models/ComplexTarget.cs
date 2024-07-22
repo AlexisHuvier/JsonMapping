@@ -10,6 +10,7 @@ namespace UnitTests.Models
     {
         public Strings Strings { get; set; } = default!;
         public DateTime Date { get; set; }
+        public DateTime? DateNullable { get; set; }
     }
 
     public class Strings
